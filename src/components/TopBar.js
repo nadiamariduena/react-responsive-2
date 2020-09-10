@@ -18,12 +18,18 @@ const TopBar = ({ styles }) => {
     padding: "0px 20px",
     boxSizing: "border-box",
   };
+  const iconStyles = {
+    width: 40,
+    height: 30,
+  };
+  //
+  //
 
   return (
     <div style={topBarStyle}>
-      <span>{`😺️`}</span>
+      <span>{`LOGO`}</span>
       App
-      <span>{`⚙️`}</span>
+      {<ion-icon name="eye-outline" style={iconStyles}></ion-icon>}
     </div>
   );
 };

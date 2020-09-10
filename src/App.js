@@ -43,13 +43,13 @@ class App extends Component {
     
     */
     const menuItems = [
-      { icon: `😀`, text: "Item 1" },
-      { icon: `😉`, text: "Item 2" },
-      { icon: `😎`, text: "Item 3" },
-      { icon: `🤔`, text: "Item 4" },
-      { icon: `😛`, text: "Item 5" },
+      { link: `Follow:`, text: "Item 1" },
+      { link: `facebook`, text: "Item 2" },
+      { link: `twitter`, text: "Item 3" },
+      { link: `instagram`, text: "Item 4" },
+      { link: `pinterest`, text: "Item 5" },
     ];
-
+    // go to line 29 in FooterMenu.js  if you want to change something here
     return (
       <div
         // We created a styles object that will contain the main styling properties for our app.

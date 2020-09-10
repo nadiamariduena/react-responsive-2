@@ -8,10 +8,12 @@ const FooterMenu = ({ menuItems, styles }) => {
         alignItems: "stretch",
         width: "100%",
         height: styles.footerMenuHeight,
-        backgroundColor: "#333",
-        color: "#fff",
+        // backgroundColor: "#333",
+        backgroundColor: styles.funky(),
+        color: "#111",
         position: "fixed",
         bottom: 0,
+        fontWeight: "bold",
       }}
     >
       {menuItems.map((item, i) => {
@@ -25,7 +27,7 @@ const FooterMenu = ({ menuItems, styles }) => {
               flex: 1,
             }}
           >
-            <span style={{ fontSize: 20 }}>{item.icon}</span>
+            <span style={{ fontSize: 20 }}>{item.link}</span>
           </div>
         );
       })}
